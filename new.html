@@ -124,14 +124,12 @@
         function focusinInputHandler() {
             var label = document.querySelector('label[for="' + this.id + '"]');
             label.classList.add('focused');
-            //console.log(this.id + ' focus in');
         }
 
         function focusoutInputHandler() {
             var label = document.querySelector('label[for="' + this.id + '"]');
             if(this.value == '');
                 label.classList.remove('focused');
-            //console.log(this.id + ' focus out');
         }
         
     </script>
